@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+body,html{
+    background-image: linear-gradient(to bottom, purple, blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    color: white;
+}
+
+#nome{
+    position: absolute;
+    width: 360px;
+    font-family: "Dancing Script", serif;
+    left: 50%;
+    padding-bottom: 5px;
+    font-size: 4.5em;
+    border-radius: 10px;
+    transform: translate(-50%);
+}
+
+#letra{
+    font-family: "Playwrite VN", serif;;
+    color: rgba(48, 45, 45, 0.808);
+    font-size: 2.8em;
+    height: 100px;
+    margin: auto;
+    width: 150px;
+}
+
+header > p.conteudo{
+    font-family: "Playwrite AU SA", serif;;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+    height: 220px;
+    border-radius: 10px;
+    flex-flow: row wrap;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.452);
+    background-color: rgba(128, 128, 128, 0.37);
+    
+    transform: translate(-50%, -50%);
+}
+
+.HTML{
+    border-radius: 5px;
+    color: rgb(255, 209, 124);
+    background-image: linear-gradient(to left, rgba(255, 166, 0, 0.5), rgb(173, 78, 0, 0.5));
+}
+
+.CSS{
+    border-radius: 5px;
+    color: rgb(3, 3, 146);
+    background-image: linear-gradient(to left, rgb(102, 102, 252), blue);
+}
+
+main p{
+    width: 360px;
+    margin: auto;
+    font-size: 1.2em;
+}
+main > p > abbr{
+    text-decoration: none;
+}
+
+menu{
+    display: flex;
+}
+
+menu > div {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 65px;
+    background-color: grey;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.418);
+    transition: .25s ease;
+}
+
+div.modulo{
+    padding: 10px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
+menu > div> a{
+    color: black    ;
+    text-decoration: none;
+}
+
+
+menu >div:hover{
+    height: 60px;
+    transform: translate(-3px, -3px);
+    background-color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+    border-radius: 10px;
+}
