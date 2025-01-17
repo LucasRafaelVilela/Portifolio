@@ -51,8 +51,12 @@ footer{
 }
 
 main > h2{
+    height: 30px;
+    color: white;
     font-size: 1.3em;
+    align-content: center;
     text-align: center;
+    background-image: linear-gradient(to right, blue, blue);
 }
 
 menu{
@@ -140,6 +144,6 @@ nav> a{
     text-decoration: none;
 }
 
-a.sema >div > p{
+div.modulo > p{
     font-size: .7em;
 }
