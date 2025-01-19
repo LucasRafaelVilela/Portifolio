@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vídeos com HTML5</title>
+    <style>
+        a.volta{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 205px;
+            height: 30px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            box-shadow: 2px -2px 7px rgba(0, 0, 0, 0.534);        
+            border-radius: 5px;
+            transition: .3s;   
+        }
+        a.volta:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(-3px, 4px);
+        }
+    </style>
 </head>
 <body>
     <h1>Inserindo vídeos hospedados localmente</h1>
@@ -13,6 +37,6 @@
 
     <h1>Inserindo Vídeos do youtube</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ErMSHiQRnc8?si=lxxbih7rU75uRzze" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <a href="../../../../index.html">Volte para o site inicial</a>
+    <a class="volta" href="../../../../index.html">Volte para o site inicial</a>
 </body>
 </html>

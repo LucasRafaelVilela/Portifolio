@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cores em CSS</title>
+    <style>
+        a.volta{
+            width: 220px;
+            height: 30px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.534);        
+            border-radius: 5px;
+            transition: .3s;   
+        }
+        a.volta:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(3px, -3px);
+        }
+    </style>
 </head>
 <body>
     <!-- Representação por nomes -->
@@ -21,7 +42,9 @@
 
     <h2 style="background-color: rgba(255, 240, 110, 0.342); color: rgb(180, 151, 88);">Exemplos de Cores</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil maxime sunt, ea qui quidem odio laborum unde repellat quasi, culpa debitis quia expedita mollitia saepe. Magnam dolorum in suscipit veritatis.</p>
-    <a href="cor02.html">Proxima pagina</a><br>
-    <a href="../../../../index.html">Volte para a pagina inicial</a>
+    <a href="cor02.html">Proxima pagina</a>
+    <br>
+    <hr>
+    <a class="volta" href="../../../../index.html">Volte para a pagina inicial</a>
 </body>
 </html>

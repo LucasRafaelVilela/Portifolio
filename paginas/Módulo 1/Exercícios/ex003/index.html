@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a.volta{
+            width: 205px;
+            height: 30px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.534);        
+            border-radius: 5px;
+            transition: .3s;   
+        }
+        a.volta:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(-3px, -3px);
+        }
+    </style>
 </head>
 <body>
     <h1>Testando carga e Imagens</h1>
+    <hr>
     <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
     <img src="Html-Logo.png" alt="Logo HTML5">
     <p>Podemos também carregar imagens que estão em sub-pastas.</p>
     <img src="imagens/Css3-Logo.png" alt="Logo CSS3">
     <p>Também podemos carregar imagens externas</p>
      <img src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--html-programming-language-coding-logos-icons-1720087.png" alt="Logo JavaScript"> <!-- URL -->
-     <a href="../../../../index.html">Volte para o site inicial</a>
+     <hr>
+     <br>
+     <a class="volta" href="../../../../index.html">Volte para o site inicial</a>
 </body>
 </html>

@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro exercício</title>
+    <style>
+        a.volta{
+            width: 205px;
+            height: 30px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.534);        
+            border-radius: 5px;
+            transition: .3s;   
+        }
+        a.volta:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(3px, -3px);
+        }
+    </style>
 </head>
 <body>
     <h1>Olá, Mundo!</h1>
     <hr>
     <p>Esse é o meu primeiro documento HTML! Estou muito feliz</p>
     <p>Este é um momento unico! Estou criando um site!</p>
-    <a href="../../../../index.html">Volte para o site inicial</a>
+    <hr>
+    <br>
+    <a class="volta" href="../../../../index.html">Volte para o site inicial</a>
 </body>
 </html>

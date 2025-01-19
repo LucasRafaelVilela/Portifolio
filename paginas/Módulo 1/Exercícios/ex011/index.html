@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mídias em HTML5</title>
+    <style>
+        a.volta{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 205px;
+            height: 30px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            box-shadow: 2px -2px 7px rgba(0, 0, 0, 0.534);        
+            border-radius: 5px;
+            transition: .3s;   
+        }
+        a.volta:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(-3px, 4px);
+        }
+    </style>
 </head>
 <body>
     <h1>Imagem dinâmica</h1>
@@ -22,6 +46,6 @@
         <source src="midia/guanacast-33.wav" type="audio/wav">
         <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
     </audio>
-    <a href="../../../../index.html">Volte para o site inicial</a>
+    <a class="volta" href="../../../../index.html">Volte para o site inicial</a>
 </body>
 </html>

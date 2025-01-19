@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com links</title>
+    <style>
+        a.next{
+            color: black;
+            display: block;
+            text-align: center;
+            align-content: center;
+            height: 30px;
+            width: 320px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.5);
+            transition: .3s ease;
+        }
+        a.next:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(3px, -4px);
+        }
+        a.volta{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 205px;
+            height: 30px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            box-shadow: 2px -2px 7px rgba(0, 0, 0, 0.534);        
+            border-radius: 5px;
+            transition: .3s;   
+        }
+        a.volta:hover{
+            color: white;
+            background-color: blue;
+            transform: translate(-3px, 4px);
+        }
+    </style>
 </head>
 <body>
     <h1>Usando Links externos</h1>
+    <a class="volta" href="../../../../index.html">Volte para o site inicial</a>
     <p>Você pode acessar o meu <a href="https://github.com/pandaCreat" target="_blank" rel="external">repositório público no GitHub</a></p>
     <h2>Usando links internos</h2>
     <p>Está é a primeira página do meu site. Se você quiser, pode acessar também a minha <a href="pag2.html" rel="next" target="_self">segunda página</a></p>
@@ -17,7 +61,6 @@
         <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="applicantion/pdf">Baixar o livro em pdf</a></li>
         <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="applicantion/zip">Livro compactado em ZIP</a></li>
     </ol>
-    <a href="pag2.html">Acesse a segunda parte do exercício</a>
-    <a href="../../../../index.html">Volte para o site inicial</a>
+    <a class="next" href="pag2.html">Acesse a segunda parte do exercício</a>
 </body>
 </html>
