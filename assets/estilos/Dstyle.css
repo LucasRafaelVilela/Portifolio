@@ -29,63 +29,128 @@ header > h1{
     font-family: "Playwrite VN", serif;
 }
 
-nav{
-    margin-top: 20px;
+main{
+    height: 100vh;
+}
+
+.conteiner{
+    padding: 20px 0px;
+    height: 100%;
     display: flex;
-    flex-flow: row wrap;
-    flex-basis: 400px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-nav> a> div{
-    font-size: 1.3em;
-    margin: 5px;
-    text-align: center;
-    align-content: center;
-    height: 200px;
-    width: 200px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.589);
-    transition: .4s ease;
+.pai{
+    height: 100vh;
+    width: 300px;
+    padding: 20px;
+    perspective: 2000px;
 }
 
-nav> a> div:hover{
-    opacity: 1;
+.card{
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-color: blue;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.card:hover{
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 25deg);
+}
+
+.caixa-de-conteudo{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.811);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow:0px 20px 50px -25px rgba(0, 115, 255, 0.925);
+    padding: 50px 25px 25px 25px;
+    transform-style: preserve-3d;
+    transition: all .3s ease-in-out;
+}
+
+.titulo-card{
+    color: White;
+    font-size: 25px;
+    font-weight: 900;
+    transform: translate3d(0px, 0px, 20px);
+    transition: all .3s ease-in-out;
+}
+
+.titulo-card:hover{
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.conteudo-card{
+    padding-top: 15px;
+    font-size: 14px;
+    transform: translate3d(0px, 0px, 15px);
+    transition: all .3s ease-in-out;
+}
+
+.conteudo-card:hover{
+    transform: translate3d(0px, 0px , 30px);
+}
+
+.veja-mais{
+    font-weight: 900;
+    display: block;
     color: white;
-    transform: translateY(-2%);
-    background-image: linear-gradient(to bottom, rgb(120, 40, 100), rgb(50, 50, 100) 90%);
-
-    transition: all 0.2s ease-in-out;
-}
-nav:hover > a > div:not(:hover)
-{
-    transform: scale(90%, 90%);
-    opacity: 0.7;
-
-    transition: all 0.5 ease-in-out;
+    font-size: 20px;
+    transform: translate3d(0px, 0px, 20px);
+    transition: all .3s ease-in-out;
 }
 
-nav> a{
-    color: rgb(180, 180, 180);
-    text-decoration: none;
-    opacity: 0.9;
+.veja-mais:hover{
+    transform: translate3d(0px, 0px, 50px);
 }
 
-nav> a> div.desf> p{
-    font-size: .7em;
-}
-
-footer{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    height: 100px;
-    color: white;
+.caixa-date{
+    position: absolute;
+    top: 75px;
+    left: 22px;
+    height: 60px;
+    width: 60px;
     background-color: black;
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 0px 15px 60px 0px rgba(0, 115, 255, 0.925), 0px 18px 36px -18px rgba(0, 200, 255);
+    transform: translate3d(0, 0, 20px);
 }
 
-footer> h2>a{
-    color: white;
-    text-decoration: none;
+.caixa-date> span{
+    display: block;
+    text-align: center;
 }
-footer> h2>a:hover{
-    color: blue;
+
+.caixa-date .mes{
+    color: white;
+    font-size: 15px;
+}
+
+.caixa-date .date{
+    font-weight: 900;
+    font-size: 30px;
+    color: rgba(0, 136, 255);
+}
+
+.card2{
+    filter: hue-rotate(130deg);
+}
+.card3{
+    filter: hue-rotate(200deg);
+}
+
+.card4{
+    filter: hue-rotate(300deg);
+}
+
+div.caixa-de-conteudo > a{
+    text-decoration: none;
 }
